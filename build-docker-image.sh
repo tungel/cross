@@ -4,7 +4,7 @@ set -ex
 
 run() {
     docker build \
-           -t japaric/$1:${TRAVIS_TAG:-latest} \
+           -t tungle/$1:${TRAVIS_TAG:-latest} \
            -f docker/${1}/Dockerfile \
            docker
 }

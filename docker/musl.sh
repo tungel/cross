@@ -23,7 +23,7 @@ main() {
         build-essential
     )
 
-    apt-get update
+    apt-get update | true
     local purge_list=()
     for dep in ${dependencies[@]}; do
         if ! dpkg -L $dep; then

@@ -7,6 +7,7 @@ main() {
 
     local debsource="deb http://http.debian.net/debian/ stretch main"
     debsource="$debsource\ndeb http://security.debian.org/ stretch/updates main"
+    debsource="$debsource\ndeb http://http.debian.net/debian/ buster main"
 
     local dropbear="dropbear-bin"
     local libssl="libssl1.0.2"
